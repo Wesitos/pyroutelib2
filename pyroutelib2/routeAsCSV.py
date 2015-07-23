@@ -21,6 +21,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #------------------------------------------------------
 from route import Router
+from loadOsm import LoadOsm
 
 def routeToCSV(lat1,lon1,lat2,lon2, transport):
   """Format a route (as list of nodes)"""

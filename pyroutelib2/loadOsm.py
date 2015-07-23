@@ -105,7 +105,7 @@ class LoadOsm(object):
         elif k == "date":
             v = self._ParseDate(v)
         result[k] = v
-    return result
+      return result
 
   def getElementTags(self, element):
     result = {}
@@ -119,7 +119,7 @@ class LoadOsm(object):
   def parseOsmFile(self, filename):
     result = []
     with open(filename, "r") as f:
-      for event, elem in etree.iterparse(f, events=('end')):
+      for event, elem in etree.iterparse(f): # events=['end']
         if elem.tag == "node":
           data = self.getElementAttributes(elem)
           data["tag"] = self.getElementTags(elem)
