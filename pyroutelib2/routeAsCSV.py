@@ -20,7 +20,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #------------------------------------------------------
-from route import *
+from route import Router
 
 def routeToCSV(lat1,lon1,lat2,lon2, transport):
   """Format a route (as list of nodes)"""
